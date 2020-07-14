@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url("http://spaceboy.dothome.co.kr/200528/cssReset/reset.css");
+
+/*공통영역 시작*/
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*공통영역 끝*/
+
+/*Guide Line*/
+/*
+div#wrap {
+    border: 1px solid #000;
+}
+*/
+/*Guide Line*/
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 860px;
+    margin: 10px auto;
+}
+
+/*div#wrap 끝*/
+
+
+/*header#header 시작*/
+header#header {
+    width: 840px;
+    margin: 20px auto;
+}
+
+div#srchByDate {
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+}
+
+#srchByDate>div {
+    font-size: 14px;
+/*    flex: 1;*/
+}
+/*
+#srchByDate #regTerm span:first-child {
+    color: #09768b;
+    font-size: 8px;
+    font-weight: bold;
+}
+*/
+#srchByDate #regTerm {
+    width: 380px;
+}
+
+#srchByDate #regTerm::before {
+    content: "〉";
+    font-size: 8px;
+    font-weight: bold;
+}
+#srchByDate #regTerm span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#srchByDate input{
+    width: 120px;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+#srchByDate #regTermBtn {
+    width: 460px;
+    text-align: right;
+}
+
+#srchByDate #regTermBtn button {
+    padding: 4px 22px;
+    font-size: 16px;
+    background-color: #3d7b0f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+div#srchByWord {
+    height: 90px;
+    border: 1px solid #eee;
+    border-top: 2px solid #09768b;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#srchByWord>div#srchWordInner {
+/*    border: 2px solid #f00;*/
+    margin: 0 auto;
+    width: 724px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px 0;
+}
+#srchByWord>div#srchWordInner::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#srchByWord>div#srchWordInner>* {
+    float: left;
+}
+#srchByWord select {
+    -webkit-appearance: none;
+}
+
+#srchByWord select::expand {
+    display: none;
+}
+
+#srchByWord select {
+    width: 140px;
+    padding: 12px;
+    border: 1px solid #ccc;
+
+    background-image: url(../images/downArrow_01.png);
+    background-repeat: no-repeat;
+    background-position: 110px center;
+}
+
+#srchByWord select option {
+    font-size: 14px;
+}
+
+#srchByWord input[type=text] {
+    width: 500px;
+    padding: 13px 4px 14px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+#srchByWord input[type=text]::placeholder {
+    text-align: center;
+    color: #09768b;
+    font-weight: bold;
+}
+
+#srchByWord button {
+    width: 80px;
+    padding: 13px 12px;
+    background-color: #09768b;
+    color: #fff;
+    border: none;
+}
+/*header#header 끝*/
+
+
+/*div#pageInfo 시작*/
+div#pageInfo {
+    width: 840px;
+    line-height: 26px;
+    padding: 24px;
+    border: 1px solid #eee;
+    border-top: 2px solid #09768b;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+div#pageInfo>p {
+    font-size: 12px;
+}
+
+div#pageInfo>p::before {
+    content: "- ";
+}
+/*div#pageInfo 끝*/
+
+
+/*main#freeBBS 시작*/
+main#freeBBs {
+    width: 840px;
+    margin: 0 auto;
+}
+
+#freeBBs div#dataDisplay {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#freeBBs div#dataDisplay span {
+    font-size: 14px;
+}
+
+#freeBBs table {
+    width: 100%;
+    max-width: 840px;
+    border-collapse: collapse;
+    border: none;
+    border-top: 2px solid #3d7b0f;
+}
+#freeBBs table th, #freeBBs table td {
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    height: 46px;
+    border-bottom: 1px solid #ccc;
+}
+
+#freeBBs table td:first-child {
+    text-align: center;
+}
+
+#freeBBs table td:nth-child(3)::after {
+    content: "**";
+}
+
+#freeBBs div#paging {
+    height: 60px;
+    text-align: center;
+}
+#freeBBs div#paging div#pagingInner {
+    width: 440px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+}
+
+#freeBBs div#paging div {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 2px;
+    flex: 1;
+}
+#freeBBs div#paging div.selected {
+    color: #fff;
+    background-color: #3d7b0f;
+}
+#freeBBs div#write {
+    text-align: right;
+}
+
+#freeBBs #writeBtn {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3d7b0f;
+    display: inline-block;
+    text-align: center;
+}
+/*main#freeBBS 끝*/
